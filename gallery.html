@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Technovation2k18 | Gallery</title>
+             <meta name="description" content="Technical Fest of Iert Allahabad">
+  <meta name="keywords" content="IERT,Technovation,technovation2k18,iert allahabad,technical fest,aktu fest,aktu zonal fest,aktu,allahabad,selfievation,selfivation,tech fest,technovation2k18.org,technovation.org,2k18technovation,2k18,Gallery">
+
+<link rel="icon" href="images/favicon.jpg" type="image/gif">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      
+    <link rel="shortcut icon" href="images/"> 
+       
+        
+        
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+              <link rel="stylesheet" href="css/styles.css">     
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" >
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        
+        
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+
+    
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/B47DE111-3E63-A446-8336-053ACCAA7CCE/main.js" charset="UTF-8"></script><script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------FIRST COROUSEL SCRIPT----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------SECOND COROUSEL SCRIPT----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+                
+
+      $(document).ready(function () {
+        var carouseltwo = $("#carouseltwo").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carouseltwo.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carouseltwo.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carouseltwo.reload(newOptions);
+          return false;
+        });
+
+      });
+
+
+    </script>
+
+    <style type="text/css">
+     
+      /*STYLING THE FIRST BOX OF COROUSEL*/
+      div#carousel {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+     
+     /*STYLING THE SECOND BOX OF COROUSEL*/
+    div#carouseltwo {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+    a#prev {
+    background-color: rgba(31,31,31,0.8);
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-left: 40%;
+    margin-right: auto;
+}
+       a#next {
+    background-color: rgba(31,31,31,0.8);
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+      #carousel {
+        width:960px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      #carouseltwo {
+        width:960px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carouseltwo img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+      div#header {
+    height: 79px !important;
+    margin-top: 0px;
+    z-index: 11;
+}
+    </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112923270-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112923270-2');
+</script>
+
+  </head>
+
+  <body>
+   
+      
+      
+      
+       <nav class="navbar navbar-expand-md bg-dark  navbar-dark fixed-top ">
+  <a class="navbar-brand mr-auto" href="index.html" style="margin-left: 20px;"><img src="images/logo.png" alt="LOGO HERE" height="40"width="50"> </a>
+              
+              
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  >
+    <span class="navbar-toggler-icon  "></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item   ">
+            <a class="nav-link " href="event.html"> EVENT </a></li>
+        <li class="nav-item   "><a class="nav-link " href="studentlogin.php"> LOGIN  </a></li>
+        
+            <li class="nav-item   "><a class="nav-link  " href="sponsor.html"> SPONSOR  </a></li>
+        
+            <li class="nav-item  active "><a class="nav-link  " href="gallery.html"> GALLERY </a></li>
+       
+      
+       
+    </ul>
+  </div>
+</nav>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+>
+     <br><br><br><br><br><br>
+    <h2 style="text-align: center; color: white;">Technical Events</h2>
+       <br>
+    <div id="carousel">
+      <img src="images/gallery/tech/IMG_2882.JPG" id="item-1" />
+      <img src="images/gallery/tech/IMG_2938.JPG" id="item-2" />
+      <img src="images/gallery/tech/IMG_2942.JPG" id="item-3" />
+      <img src="images/gallery/tech/IMG_2980.JPG" id="item-4" />
+      <img src="images/gallery/tech/P_20160319_130323%20-%20Copy.jpg" id="item-5" />
+      
+      
+    </div>
+          
+    <br/>
+    <hr style="color: white; height: 5px; width: 60%; background-color: white; border-radius: 10px;">
+    <br/>
+    <br/>
+     
+
+      
+      
+      
+      
+      
+     <h2 style="text-align: center; color: white;">Non-Tech Event</h2>
+      <br>
+    <div id="carouseltwo">
+      <img src="images/gallery/IMG_2888.JPG" id="item-1" alt="tug-of-war" title="Tug-of-War" />
+      <img src="images/gallery/IMG_2880.JPG" id="item-2" alt="dangorious"  title="Dangorious" />
+      <img src="images/gallery/IMG_2873.JPG" id="item-3" alt="counter-strike"  title="Counter-Strike"/>
+      <img src="images/gallery/IMG_2928.JPG" id="item-4" alt="blind-date"  title="Blind-Date"/>
+      <img src="images/gallery/IMG_3002.JPG" id="item-5" alt="musical-chair"  title="Musical-Chair"/>
+      <img src="images/gallery/IMG_3040.JPG" id="item-6" alt="pi" title="PI" />
+      <img src="images/gallery/IMG_3045.JPG" id="item-7" alt="kavyanical" title="Kavyanical" />
+      <img src="images/gallery/IMG_3134.JPG" id="item-8" alt="rangoli"  title="Rangoli" />
+    </div>
+
+    <br/>
+    <hr style="color: white; height: 5px; width: 60%; background-color: white; border-radius: 10px;">
+    <br/>
+    <br/>
+	
+  </body>
+</html>
+
